@@ -1,0 +1,82 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Additional Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Dark Theme */
+.dark-bg {
+    background-color: #121212;
+    color: #fff;
+}
+
+.dark-nav {
+    background-color: #333;
+}
+
+.dark-link {
+    color: #fff;
+}
+
+.dark-button {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.dark-button:hover {
+    background-color: #ff4d3a;
+}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}Movie Recommendations{% endblock %}
+
+{% block content %}
+    <section class="recommendations">
+        <div class="container">
+            <h1>Movie Recommendations</h1>
+            <div class="movie-list">
+                {% if recommend_movies %}
+                    <ul>
+                        {% for movie in recommend_movies %}
+                            <li>{{ movie }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No recommendations found for the given movie title.</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+<style>
+    /* Custom CSS for the recommendations page */
+    .recommendations {
+        background-color: #121212;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .movie-list {
+        text-align: left;
+    }
+    .movie-list ul {
+        list-style: none;
+    }
+    .movie-list li {
+        margin: 5px 0;
+    }
+</style>
